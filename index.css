@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.projects {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type: circle;
+  line-height-step: 24;
+}
+
+.heading {
+  color: white;
+  text-decoration: none;
+  font-size: 64px;
+}
+
+.heading:hover {
+  text-decoration: none;
+}
+
+.slogan {
+  text-align: center;
+}
+
+.links {
+  text-decoration: none;
+  color: #1796de;
+  text-decoration-color: #1796de;
+}
+.links:hover {
+  background-color: #1796de;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
