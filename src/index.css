@@ -4,12 +4,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--bg);
+}
 body {
   background-color: var(--bg);
   color: var(--clr);
   font-family: "League Spartan", sans-serif;
-  font-size: 12px;
-  @apply text-center transition-all duration-700 ease-linear;
+  font-size: 18px;
+  @apply text-center transition-all duration-700 ease-in;
 }
 
 :root {
@@ -26,6 +38,7 @@ body {
   --bgop: black;
   --clrop: white;
   --linkclr: #0090eb;
+  height: 150%;
 }
 
 [data-theme="dark"] {
@@ -60,17 +73,16 @@ body {
 .placeholder {
   color: var(--clr);
   background-color: var(--bg);
-  @apply transition-all duration-700 ease-linear scale-y-150;
+  @apply scale-y-150 duration-700;
 }
 
 .links:hover {
   background-color: var(--linkclr);
   color: black;
-  @apply transition-all duration-700 ease-linear;
 }
 
 .projects {
-  @apply list-none transition-all duration-700 ease-linear cursor-none;
+  @apply cursor-none;
 }
 
 @media screen and (min-width: 1800px) {
@@ -78,7 +90,7 @@ body {
     @apply scale-100;
   }
   body {
-    font-size: 36px;
+    font-size: 38px;
   }
   .links {
     font-size: 24px;

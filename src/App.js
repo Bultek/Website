@@ -16,7 +16,10 @@ function App() {
       <head>
         <title>Bultek.</title>
         <link rel="stylesheet" href="index.css" text-type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
         <meta name="author" content="Demir Yerli and Bultek." />
         <meta name="description" content="Bultek. website" />
         <meta charset="utf-8" />
@@ -83,13 +86,12 @@ function App() {
         <button class="themetoggle" onClick={switchTheme} type="button">
           Switch theme.
         </button>
-        <div class="placeholder">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </body>
     </html>
   );
