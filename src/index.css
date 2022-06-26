@@ -20,7 +20,7 @@ body {
   background-color: var(--bg);
   color: var(--clr);
   font-family: "League Spartan", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   @apply text-center transition-all duration-700 ease-in;
 }
 
@@ -46,7 +46,27 @@ body {
   --clr: white;
   --bgop: white;
   --clrop: black;
-  --linkclr: aqua;
+  --linkclr: #0090eb;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: white;
+    --clr: black;
+    --bgop: black;
+    --clrop: white;
+    --linkclr: #0090eb;
+    height: 150%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: black;
+    --clr: white;
+    --bgop: white;
+    --clrop: black;
+    --linkclr: #0090eb;
+  }
 }
 
 .themetoggle {
@@ -55,7 +75,7 @@ body {
 }
 
 .heading {
-  font-size: 36px;
+  font-size: 38px;
   @apply font-extrabold;
   margin: 0;
   padding: 0;
@@ -66,7 +86,7 @@ body {
 }
 
 .links {
-  font-size: 12px;
+  font-size: 28px;
   color: var(--linkclr);
 }
 
@@ -78,6 +98,7 @@ body {
 
 .links:hover {
   background-color: var(--linkclr);
+  @apply duration-700;
   color: black;
 }
 

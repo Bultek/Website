@@ -1,9 +1,30 @@
 import React from "react";
-import useLocalStorage from "use-local-storage";
 import "./index.css";
+import useLocalStorage from "use-local-storage";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+  let defaultvalue = "dark";
+  let altvalue = "light";
+  var storedTheme = localStorage.getItem("theme");
+  if (!storedTheme) {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches
+    ) {
+      defaultvalue = "light";
+      altvalue = "dark";
+    }
+  }
+
+  console.log(
+    "default value: " + defaultvalue,
+    "\nalt value: " + altvalue,
+    "\nstored theme: " + storedTheme
+  );
+
+  const [theme, setTheme] = useLocalStorage("theme" ? defaultvalue : altvalue);
+
+  console.log("set theme: ", theme);
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -82,7 +103,6 @@ function App() {
           </ul>
         </div>
         <br />
-
         <button class="themetoggle" onClick={switchTheme} type="button">
           Switch theme.
         </button>
