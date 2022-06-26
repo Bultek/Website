@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  @apply text-center;
+}
+
+.heading {
+  font-size: 36px;
+  @apply text-white font-extrabold;
+  margin: 0;
+  padding: 0;
+}
+
+.slogan-big {
+  display: none;
+}
+
+.links {
+  font-size: 12px;
+  color: aqua;
+  @apply font-normal;
+}
+
+.links:hover {
+  background-color: aqua;
+  @apply text-black;
+}
+
+.projects {
+  @apply hover:list-disc list-none rounded-3xl hover:rounded-xl transition-all duration-1000 ease-linear cursor-none;
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    font-size: 36px;
+  }
+  .links {
+    font-size: 24px;
+  }
+  .heading {
+    font-size: 64px;
+  }
+  .slogan-big {
+    display: block;
+  }
+  .slogan-small {
+    display: none;
+  }
+}
