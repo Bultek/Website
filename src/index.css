@@ -5,16 +5,45 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--bg);
+  color: var(--clr);
   font-family: "League Spartan", sans-serif;
   font-size: 12px;
-  @apply text-center;
+  @apply text-center transition-all duration-700 ease-linear;
+}
+
+:root {
+  --bg: black;
+  --clr: white;
+  --bgop: white;
+  --clrop: black;
+  --linkclr: aqua;
+}
+
+[data-theme="light"] {
+  --bg: white;
+  --clr: black;
+  --bgop: black;
+  --clrop: white;
+  --linkclr: #0090eb;
+}
+
+[data-theme="dark"] {
+  --bg: black;
+  --clr: white;
+  --bgop: white;
+  --clrop: black;
+  --linkclr: aqua;
+}
+
+.themetoggle {
+  background-color: var(--bgop);
+  color: var(--clrop);
 }
 
 .heading {
   font-size: 36px;
-  @apply text-white font-extrabold;
+  @apply font-extrabold;
   margin: 0;
   padding: 0;
 }
@@ -25,20 +54,29 @@ body {
 
 .links {
   font-size: 12px;
-  color: aqua;
-  @apply font-normal;
+  color: var(--linkclr);
+}
+
+.placeholder {
+  color: var(--clr);
+  background-color: var(--bg);
+  @apply transition-all duration-700 ease-linear scale-y-150;
 }
 
 .links:hover {
-  background-color: aqua;
-  @apply text-black;
+  background-color: var(--linkclr);
+  color: black;
+  @apply transition-all duration-700 ease-linear;
 }
 
 .projects {
-  @apply hover:list-disc list-none rounded-3xl hover:rounded-xl transition-all duration-1000 ease-linear cursor-none;
+  @apply list-none transition-all duration-700 ease-linear cursor-none;
 }
 
 @media screen and (min-width: 1800px) {
+  .placeholder {
+    @apply scale-100;
+  }
   body {
     font-size: 36px;
   }

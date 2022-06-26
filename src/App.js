@@ -1,4 +1,16 @@
+import React from "react";
+import useLocalStorage from "use-local-storage";
+import "./index.css";
+
 function App() {
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    console.log("Setting new theme to " + newTheme);
+  };
+
   return (
     <html>
       <head>
@@ -12,7 +24,7 @@ function App() {
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       </head>
-      <body>
+      <body data-theme={theme}>
         <a id="logo" href="http://bultek.com.ua">
           <article class="heading">Bultek.</article>
         </a>
@@ -67,6 +79,17 @@ function App() {
           </ul>
         </div>
         <br />
+
+        <button class="themetoggle" onClick={switchTheme} type="button">
+          Switch theme.
+        </button>
+        <div class="placeholder">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </body>
     </html>
   );
