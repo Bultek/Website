@@ -20,7 +20,7 @@ function App() {
         <div id="slogan" class="slogan-big">
           <h3>
             <strong>
-              ------------------------------| We are team of enthusiasts, that
+              ------------------------------| We are a team of enthusiasts, that
               are developing software |------------------------------
             </strong>
           </h3>
@@ -28,7 +28,7 @@ function App() {
         <div id="slogan" class="slogan-small">
           <h3>
             <strong>
-              We are team of enthusiasts, that are developing software
+              We are a team of enthusiasts, that are developing software
             </strong>
           </h3>
         </div>
