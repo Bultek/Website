@@ -16,7 +16,17 @@ html {
   background-color: var(--bg);
   color: var(--bg);
 }
+
 body {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 1;
   background-color: var(--bg);
   color: var(--clr);
   font-family: "League Spartan", sans-serif;
@@ -120,7 +130,9 @@ body {
     font-size: 64px;
   }
   .slogan-big {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .slogan-small {
     display: none;

@@ -3,7 +3,7 @@ export default function Links() {
     <>
       <p>|</p>
       <a
-        class="links"
+        className="links"
         rel="noreferrer"
         href="https://github.com/Bultek "
         target="_blank"
@@ -12,7 +12,7 @@ export default function Links() {
       </a>
       <p>|</p>
       <a
-        class="links"
+        className="links"
         rel="noreferrer"
         href="https://twitter.com/BultekDev"
         target="_blank"
@@ -21,7 +21,7 @@ export default function Links() {
       </a>
       <p>|</p>
       <a
-        class="links"
+        className="links"
         rel="noreferrer"
         href="mailto:help@bultek.com.ua"
         target="_blank"

@@ -3,10 +3,6 @@ export default function Placeholder() {
     <>
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 }

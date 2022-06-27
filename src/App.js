@@ -46,7 +46,7 @@ function App() {
         <Links />
         <Projects />
         <br />
-        <button class="themetoggle" onClick={switchTheme} type="button">
+        <button className="themetoggle" onClick={switchTheme} type="button">
           Switch theme.
         </button>
         <Copyright />

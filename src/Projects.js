@@ -1,9 +1,9 @@
 export default function Projects() {
   return (
     <>
-      <div class="projects">
-        <p class="projects">Projects that we currently maintain:</p>
-        <ul class="projects">
+      <div className="projects">
+        <p className="projects">Projects that we currently maintain:</p>
+        <ul className="projects">
           <li>Libquartz and tools</li>
         </ul>
       </div>

@@ -8,10 +8,10 @@ export default function Head() {
       />
       <meta name="author" content="Demir Yerli and Bultek." />
       <meta name="description" content="Bultek. website" />
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <link rel="icon" href="favicon.png" type="image/png" />
 
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     </head>
   );
 }
