@@ -5,6 +5,8 @@ import useLocalStorage from "use-local-storage";
 import Heading from "./Heading";
 import Links from "./Links";
 import Placeholder from "./PlaceHolder";
+import Projects from "./Projects";
+import Copyright from "./Copyright";
 
 function App() {
   let defaultvalue = "dark";
@@ -42,16 +44,12 @@ function App() {
       <body data-theme={theme}>
         <Heading />
         <Links />
-        <div class="projects">
-          <p class="projects">Projects that we currently maintain:</p>
-          <ul class="projects">
-            <li>Libquartz and tools</li>
-          </ul>
-        </div>
+        <Projects />
         <br />
         <button class="themetoggle" onClick={switchTheme} type="button">
           Switch theme.
         </button>
+        <Copyright />
         <Placeholder />
       </body>
     </html>
