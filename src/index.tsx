@@ -5,7 +5,7 @@ import App from "./App";
 
 let el = document.getElementById("root");
 
-if (el===null) {
+if (el === null) {
   el = document.createElement("div");
 }
 

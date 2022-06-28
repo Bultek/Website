@@ -1,6 +1,6 @@
 {
   "name": "bultekwebsite",
-  "version": "27.06.2022.1",
+  "version": "28.06.2022.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
