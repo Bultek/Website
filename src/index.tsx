@@ -3,7 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+let el = document.getElementById("root");
+
+if (el===null) {
+  el = document.createElement("div");
+}
+
+const root = ReactDOM.createRoot(el);
+
 root.render(
   <React.StrictMode>
     <App />

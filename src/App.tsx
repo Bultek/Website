@@ -28,7 +28,7 @@ function App() {
     "\nstored theme: " + storedTheme
   );
 
-  const [theme, setTheme] = useLocalStorage("theme" ? defaultvalue : altvalue);
+  const [theme, setTheme] = useLocalStorage("theme", defaultvalue);
 
   console.log("set theme: ", theme);
 
