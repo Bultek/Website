@@ -6,5 +6,5 @@ This website was built using:
 - react
 - Tailwind CSS
 - node.js
-- craco
+- typescript
 - postcss
