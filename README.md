@@ -1,10 +1,1 @@
-# Bultek Website
-
-This website was built using:
-
-- yarn
-- react
-- Tailwind CSS
-- node.js
-- typescript
-- postcss
+# We have moved to a self-hosted [GitLab instance](https://bultek.synchron.com.ua/)
